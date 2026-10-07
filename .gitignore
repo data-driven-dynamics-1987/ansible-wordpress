@@ -1,0 +1,47 @@
+# --- Secrets & credentials (NEVER commit) ---
+*.pem
+*.key
+id_rsa*
+do_wp
+do_wp.pub
+Charles-Tull-2608*
+.vault_pass
+vault_pass.txt
+*vault*.yml
+group_vars/all/vault.yml
+.env
+*.token
+do_token*
+
+# --- Ansible ---
+*.retry
+*.log
+# inventory.ini is generated at run time and holds live droplet IPs
+inventory.ini
+fact_cache/
+.ansible/
+roles/downloaded/
+collections/
+
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-error.log
+.npm/
+
+# --- Python (legacy report generator) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+._*
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+*~
